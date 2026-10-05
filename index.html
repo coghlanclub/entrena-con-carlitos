@@ -337,9 +337,9 @@ body{padding-bottom:76px}
     <h2>Entrenamientos reales</h2>
     <p class="lead">Sin filtros: así se entrena en el box y esto cuentan los que ya entrenan con nosotros.</p>
     <div class="videos" id="videos">
-      <div class="video-card"><video poster="entreno1.jpg" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-label="Video de entrenamiento 1"><source src="entreno1.mp4" type="video/mp4"><source src="entreno1.webm" type="video/webm"></video></div>
-      <div class="video-card"><video poster="entreno2.jpg" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-label="Video de entrenamiento 2"><source src="entreno2.mp4" type="video/mp4"><source src="entreno2.webm" type="video/webm"></video></div>
-      <div class="video-card"><video poster="entreno3.jpg" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-label="Video de entrenamiento 3"><source src="entreno3.mp4" type="video/mp4"><source src="entreno3.webm" type="video/webm"></video></div>
+      <div class="video-card"><video data-anim="entreno1.webp" poster="entreno1.jpg" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-label="Video de entrenamiento 1"><source src="entreno1.mp4" type="video/mp4"><source src="entreno1.webm" type="video/webm"></video></div>
+      <div class="video-card"><video data-anim="entreno2.webp" poster="entreno2.jpg" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-label="Video de entrenamiento 2"><source src="entreno2.mp4" type="video/mp4"><source src="entreno2.webm" type="video/webm"></video></div>
+      <div class="video-card"><video data-anim="entreno3.webp" poster="entreno3.jpg" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-label="Video de entrenamiento 3"><source src="entreno3.mp4" type="video/mp4"><source src="entreno3.webm" type="video/webm"></video></div>
     </div>
     <a class="btn" href="https://www.instagram.com/entrena.concarlitos" target="_blank" rel="noopener" style="margin-top:24px">Ver más en Instagram</a>
   </div>
@@ -768,14 +768,20 @@ document.getElementById('promo-abrir').addEventListener('click', e => { e.stopPr
   document.querySelectorAll('#menu-movil a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('abierto'); btn.setAttribute('aria-expanded', false); }));
 })();
 
-// Videos: se reproducen solos (muted + playsinline). Esto solo los vuelve a lanzar si el navegador los frenó.
+// Videos: arrancan solos. Si el navegador bloquea la reproducción automática
+// (modo bajo consumo, Safari, Instagram), se cambian por una versión animada que se mueve siempre.
 (() => {
   const vs = [...document.querySelectorAll('#videos video')];
-  const play = () => vs.forEach(v => { v.muted = true; const p = v.play(); if (p) p.catch(() => {}); });
-  play();
-  document.addEventListener('visibilitychange', () => { if (!document.hidden) play(); });
-  ['touchstart', 'click', 'scroll'].forEach(ev => window.addEventListener(ev, play, { passive: true, once: true }));
-  if ('IntersectionObserver' in window) new IntersectionObserver(es => { if (es[0].isIntersecting) play(); }, { threshold: 0.1 }).observe(document.getElementById('videos'));
+  const aAnimado = v => {
+    if (!v.isConnected || !v.paused) return;
+    const img = document.createElement('img');
+    img.src = v.dataset.anim; img.alt = v.getAttribute('aria-label') || '';
+    img.style.cssText = 'width:100%;height:100%;object-fit:cover;display:block';
+    v.replaceWith(img);
+  };
+  const play = v => { v.muted = true; const p = v.play(); if (p) p.catch(() => aAnimado(v)); };
+  vs.forEach(play);
+  setTimeout(() => vs.forEach(aAnimado), 2500);
 })();
 </script>
 </body>
