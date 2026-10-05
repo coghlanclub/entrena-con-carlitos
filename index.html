@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entrenamiento personalizado · Carlos Giménez</title>
+<meta name="description" content="Entrenamiento personalizado en Buenos Aires. En el box, a domicilio, online o híbrido. Profesores de Educación Física. De atletas a principiantes.">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Google Analytics 4: pegá acá tu código cuando lo tengas (Fase 5) -->
+<!-- Pixel de Meta: pegá acá tu código cuando lo tengas (Fase 5) -->
+
+<style>
+:root{
+  --verde:#17BE7B; --verde-osc:#0F9A62; --verde-suave:#E7F8F0;
+  --navy:#0C2440; --celeste:#9FC8FE; --celeste-suave:#EEF5FF;
+  --bg:#FAFBF8; --blanco:#FFFFFF; --texto:#0C2440; --gris:#5B6B80; --linea:#E3E8EE;
+  --display:'Bebas Neue',sans-serif; --sans:'Inter',system-ui,sans-serif;
+  --radio:18px; --ancho:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--texto);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--ancho);margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.5px;line-height:.95}
+h2{font-size:clamp(40px,7vw,64px);margin-bottom:14px}
+.kicker{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--verde-osc);margin-bottom:10px}
+.lead{font-size:17px;color:var(--gris);max-width:620px}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--verde);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:15px 24px;border-radius:999px;transition:transform .15s,background .15s;border:0;cursor:pointer}
+.btn:hover{background:var(--verde-osc);transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-sec{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+.btn-sec:hover{background:var(--navy);color:#fff}
+.btn-chico{font-size:14px;padding:11px 18px}
+
+/* Nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(250,251,248,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.marca{display:flex;align-items:center;gap:10px;text-decoration:none}
+.marca img{height:36px;width:auto}
+.marca span{font-family:var(--display);font-size:24px;letter-spacing:1px}
+.nav-links{gap:22px;font-size:14px;font-weight:600}
+.nav-links a{text-decoration:none;color:var(--gris)}
+.nav-links a:hover{color:var(--navy)}
+.nav-links{display:none}
+.nav-cta{display:none}
+.menu-btn{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;border:1px solid var(--linea);background:var(--blanco);color:var(--navy);cursor:pointer}
+.menu-btn svg{width:22px;height:22px}
+.menu-movil{display:none;flex-direction:column;padding:6px 20px 14px;border-top:1px solid var(--linea);background:var(--bg)}
+nav.abierto .menu-movil{display:flex}
+.menu-movil a{padding:13px 4px;font-weight:600;font-size:17px;text-decoration:none;border-bottom:1px solid var(--linea)}
+.menu-movil a:last-child{border-bottom:0}
+@media(min-width:861px){.nav-links{display:flex}.nav-cta{display:inline-flex}.menu-btn,.menu-movil,nav.abierto .menu-movil{display:none}}
+
+/* Hero */
+.hero{padding:28px 0 40px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1fr;gap:20px;align-items:center}
+.hero h1{font-size:clamp(52px,14vw,112px);margin:6px 0 16px}
+.hero h1 em{font-style:normal;color:var(--verde)}
+.hero .lead{margin-bottom:28px}
+.hero-ctas{display:flex;flex-direction:column;gap:10px}
+.hero-ctas .btn{justify-content:center}
+.hero-img{position:relative}
+.hero-img::before{content:"";position:absolute;inset:8% 6%;background:var(--celeste-suave);border-radius:50%;z-index:-1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chip{font-size:13px;font-weight:600;background:var(--blanco);border:1px solid var(--linea);padding:7px 13px;border-radius:999px}
+.hero-img{max-width:200px;margin:0 auto}
+@media(min-width:761px){.hero{padding:48px 0 64px}.hero .wrap{grid-template-columns:1.1fr .9fr;gap:32px}.hero-img{max-width:none}.hero-ctas{flex-direction:row;flex-wrap:wrap}}
+
+/* Quiénes somos */
+.somos{background:var(--navy);color:#fff}
+.somos .kicker{color:var(--verde)}
+.somos .lead{color:#B9C6D6}
+.somos-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:36px}
+.somos-card{background:rgba(255,255,255,.06);border:1px solid rgba(159,200,254,.18);border-radius:var(--radio);padding:24px}
+.somos-card .num{font-family:var(--display);font-size:46px;color:var(--verde);line-height:1}
+.somos-card h3{font-size:26px;margin:8px 0 6px}
+.somos-card p{color:#B9C6D6;font-size:15px}
+.somos .btn{margin-top:32px}
+@media(min-width:761px){.somos-grid{grid-template-columns:repeat(3,1fr)}}
+
+/* Modalidades */
+.mod-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:34px}
+.mod{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radio);padding:24px;display:flex;flex-direction:column}
+.mod .ico{width:46px;height:46px;border-radius:12px;background:var(--verde-suave);display:grid;place-items:center;margin-bottom:16px}
+.mod .ico svg{width:24px;height:24px;stroke:var(--verde-osc);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.mod h3{font-size:30px;margin-bottom:6px}
+.mod p{color:var(--gris);font-size:15px;flex:1;margin-bottom:18px}
+
+/* Testimonios */
+.testi{background:var(--verde-suave)}
+.testi-top{display:grid;grid-template-columns:1fr;gap:16px;margin-top:34px}
+.testi-resto{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:16px}
+.t-card{background:var(--blanco);border-radius:var(--radio);padding:24px;display:flex;flex-direction:column;gap:14px}
+.t-card .video{aspect-ratio:9/16;max-height:420px;width:100%;border-radius:12px;background:var(--navy);object-fit:cover}
+.t-card blockquote{font-size:16px}
+.t-card .quien{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px}
+.t-card .quien b{display:block}
+.t-card .quien span{color:var(--gris)}
+.tag{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:5px 10px;border-radius:999px;background:var(--navy);color:#fff;white-space:nowrap}
+.tag.v{background:var(--verde)}
+.testi-cta{display:flex;flex-direction:column;gap:10px;margin-top:24px}
+.testi-cta .btn{justify-content:center}
+@media(min-width:761px){.testi-cta{flex-direction:row}}
+@media(min-width:761px){.testi-top{grid-template-columns:1fr 1fr}}
+
+/* Reseñas */
+.resenas-box{display:grid;grid-template-columns:1fr;gap:28px;align-items:center;background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radio);padding:28px;margin-top:30px}
+.nota{font-family:var(--display);font-size:72px;line-height:1}
+.estrellas{color:#F5B400;font-size:22px;letter-spacing:2px}
+.resenas-box p{color:var(--gris)}
+@media(min-width:761px){.resenas-box{grid-template-columns:auto 1fr auto}}
+
+/* Video */
+.video-sec{background:var(--navy);color:#fff}
+.video-sec .lead{color:#B9C6D6}
+.videos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:30px}
+.video-card{position:relative;display:block;min-width:0;max-width:100%;aspect-ratio:9/16;max-height:620px;border-radius:12px;overflow:hidden;background:#071729;text-decoration:none}
+.video-card video{width:100%;height:100%;object-fit:cover;display:block}
+@media(min-width:601px){.videos{gap:16px}.video-card{border-radius:var(--radio)}}
+
+
+/* El box */
+.box-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}
+.box-grid figure{border-radius:var(--radio);overflow:hidden;position:relative;background:var(--linea)}
+.box-grid figure{aspect-ratio:3/4;max-width:100%}
+.box-grid figure:first-child{grid-column:1/-1;aspect-ratio:4/5}
+.box-grid img{width:100%;height:100%;object-fit:cover}
+.box-grid figcaption{position:absolute;left:12px;bottom:12px;background:rgba(12,36,64,.85);color:#fff;font-size:12px;font-weight:600;padding:5px 10px;border-radius:999px}
+.box-info{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}
+.box-item{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radio);padding:22px}
+.box-item h3{font-size:26px;margin-bottom:6px}
+.box-item p{color:var(--gris);font-size:15px}
+@media(min-width:761px){
+  .box-grid{grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px;gap:12px}
+  .box-grid figure{aspect-ratio:auto}
+  .box-grid figure:first-child{grid-column:auto;grid-row:span 2;aspect-ratio:auto}
+  .box-info{grid-template-columns:repeat(2,1fr)}
+}
+
+/* Agenda */
+.agenda{display:grid;grid-template-columns:1fr;gap:22px;background:var(--navy);color:#fff;border-radius:24px;padding:26px 18px}
+.agenda .kicker{color:var(--verde)}
+.agenda h2{color:#fff}
+.agenda-txt p{color:#B9C6D6}
+.agenda-campos{display:grid;grid-template-columns:1fr;gap:12px}
+.agenda label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#B9C6D6}
+.agenda input,.agenda select{font:inherit;font-size:16px;color:var(--navy);background:#fff;border:0;border-radius:12px;padding:13px 14px;width:100%}
+.agenda .full{grid-column:1/-1}
+.agenda select{-webkit-appearance:none;appearance:none;height:49px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230C2440' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center/16px;padding-right:40px}
+.agenda input:not([type=checkbox]){height:49px}
+.opciones{border:0;display:flex;flex-wrap:wrap;gap:8px}
+.opciones legend{font-size:13px;font-weight:600;color:#B9C6D6;margin-bottom:8px}
+.opciones label{display:block;position:relative}
+.opciones input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;pointer-events:none}
+.opciones span{display:inline-block;cursor:pointer;font-size:14px;font-weight:600;color:#fff;border:1.5px solid rgba(159,200,254,.35);border-radius:999px;padding:9px 14px;transition:background .15s,border-color .15s}
+.opciones input:checked+span{background:var(--verde);border-color:var(--verde)}
+.opciones input:focus-visible+span{outline:2px solid var(--celeste);outline-offset:2px}
+.aviso{color:#FFB4AE;font-size:14px;font-weight:600}
+.agenda .btn{justify-content:center;margin-top:4px}
+@media(min-width:761px){.agenda{grid-template-columns:1fr 1.2fr;gap:28px;padding:36px}.agenda-campos{grid-template-columns:1fr 1fr}}
+
+/* Equipo */
+.profe{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;background:var(--blanco);border:1px solid var(--linea);border-radius:24px;padding:16px;margin-top:20px}
+.profe:first-of-type{margin-top:34px}
+.profe-foto{border-radius:18px;overflow:hidden;aspect-ratio:4/5;background:var(--celeste-suave);display:grid;place-items:center;color:var(--gris);font-size:14px}
+.profe-iniciales{background:var(--verde-suave);color:var(--verde-osc);font-family:var(--display);font-size:96px;letter-spacing:2px}
+.profe-foto img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.profe h3{font-size:38px;margin-bottom:4px}
+.profe .rol{color:var(--verde-osc);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
+.profe p{color:var(--gris);font-size:16px;margin-bottom:18px}
+.profe .chips{margin:0 0 18px}
+.profe-links{display:flex;flex-wrap:wrap;gap:10px}
+.ig{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;text-decoration:none;border:2px solid var(--navy);border-radius:999px;padding:9px 16px}
+.ig:hover{background:var(--navy);color:#fff}
+.ig svg{width:18px;height:18px}
+@media(min-width:761px){.profe{grid-template-columns:340px 1fr;gap:32px;padding:24px}.profe h3{font-size:44px}}
+
+/* Promo híbrido */
+.promo[hidden],.promo-btn[hidden]{display:none!important}
+.promo{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(12,36,64,.55);backdrop-filter:blur(3px)}
+.promo.on{display:flex;animation:fade .25s ease}
+.promo-card{position:relative;background:var(--bg);border-radius:24px;max-width:440px;width:100%;max-height:calc(100dvh - 32px);overflow-y:auto;padding:26px 24px 22px;text-align:center;box-shadow:0 30px 80px rgba(12,36,64,.35);animation:sube .3s ease}
+.promo-tigre{width:130px;height:130px;margin:0 auto 12px;border-radius:50%;background:var(--verde-suave);display:grid;place-items:center;box-shadow:0 0 0 6px rgba(23,190,123,.15)}
+.promo-tigre img{width:82%;height:82%;object-fit:contain;transform:translate(-2%,2%)}
+.promo-txt .kicker{margin-bottom:6px}
+.promo-txt h2{font-size:clamp(36px,9vw,46px);margin-bottom:10px}
+.promo-txt h2 em{font-style:normal;color:var(--verde)}
+.promo-txt p{color:var(--gris);font-size:15px;margin-bottom:12px}
+.promo-txt ul{list-style:none;text-align:left;display:flex;flex-direction:column;gap:7px;margin:0 auto 18px;max-width:340px;font-size:14px;font-weight:600}
+.promo-txt li::before{content:"✓ ";color:var(--verde-osc)}
+.promo-txt .btn{width:100%;justify-content:center}
+.promo-no{background:none;border:0;color:var(--gris);font:inherit;font-size:14px;margin-top:10px;cursor:pointer;text-decoration:underline}
+.promo-x{position:absolute;top:10px;right:12px;width:36px;height:36px;border-radius:50%;background:none;border:0;font-size:26px;line-height:1;color:var(--gris);cursor:pointer}
+.promo-btn{display:none!important}
+.promo-btn.on{display:inline-flex!important}
+.promo-btn{position:fixed;left:16px;bottom:22px;z-index:50;display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff;border:0;font:inherit;font-weight:700;font-size:14px;padding:13px 18px;border-radius:999px;cursor:pointer;box-shadow:0 8px 24px rgba(12,36,64,.3);animation:late 2s ease-in-out 1s 3}
+.promo-btn span{display:inline-block;background:var(--verde);border-radius:999px;font-size:11px;padding:3px 8px;letter-spacing:1px;text-transform:uppercase}
+@keyframes late{50%{transform:scale(1.06)}}
+@keyframes fade{from{opacity:0}}
+@keyframes sube{from{transform:translateY(20px);opacity:0}}
+
+/* Para quién */
+.para-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:34px}
+.para{border-radius:var(--radio);padding:26px;background:var(--blanco);border:1px solid var(--linea)}
+.para .tag{display:inline-block;margin-bottom:14px}
+.para h3{font-size:30px;margin-bottom:8px}
+.para p{color:var(--gris);font-size:15px}
+@media(min-width:761px){.para-grid{grid-template-columns:repeat(3,1fr)}}
+
+/* Cómo es una sesión */
+.pasos{display:grid;grid-template-columns:1fr;gap:14px;margin-top:34px;counter-reset:p}
+.paso{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radio);padding:22px}
+.paso::before{counter-increment:p;content:"0" counter(p);font-family:var(--display);font-size:40px;color:var(--verde);display:block;line-height:1;margin-bottom:8px}
+.paso h3{font-size:24px;margin-bottom:6px}
+.paso p{color:var(--gris);font-size:14px}
+@media(min-width:521px){.pasos{grid-template-columns:1fr 1fr}}
+@media(min-width:861px){.pasos{grid-template-columns:repeat(4,1fr)}}
+
+/* Planes en tarjetas */
+.planes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:30px;align-items:stretch}
+.plan{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radio);padding:24px;display:flex;flex-direction:column;gap:10px;position:relative}
+.plan.dest{border:2px solid var(--verde);box-shadow:0 10px 30px rgba(23,190,123,.15)}
+.plan .badge{position:absolute;top:-12px;left:20px;background:var(--verde);color:#fff;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.plan h3{font-size:30px}
+.plan .donde{font-size:13px;color:var(--gris);font-weight:600;text-transform:uppercase;letter-spacing:1px}
+.plan .precio{font-family:var(--display);font-size:46px;line-height:1;margin-top:6px}
+.plan .precio small{font-family:var(--sans);font-size:14px;color:var(--gris)}
+.plan ul{list-style:none;font-size:14px;color:var(--gris);display:flex;flex-direction:column;gap:6px;flex:1;margin:6px 0 10px}
+.plan li::before{content:"✓ ";color:var(--verde-osc);font-weight:700}
+.plan .btn{justify-content:center}
+.prueba{margin-top:18px;background:var(--celeste-suave);border-radius:var(--radio);padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.prueba b{font-family:var(--display);font-size:28px;font-weight:400}
+
+/* FAQ */
+.faq{margin-top:30px;display:flex;flex-direction:column;gap:10px;max-width:820px}
+.faq details{background:var(--blanco);border:1px solid var(--linea);border-radius:14px;padding:18px 22px}
+.faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::after{content:"+";color:var(--verde-osc);font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{color:var(--gris);margin-top:10px;font-size:15px}
+
+/* Ubicación */
+.ubi-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:30px;align-items:stretch}
+.mapa{border-radius:var(--radio);overflow:hidden;min-height:340px;border:1px solid var(--linea)}
+.mapa{display:block;position:relative}
+.mapa iframe{width:100%;height:100%;min-height:340px;border:0;pointer-events:none}
+.mapa-tag{position:absolute;left:14px;top:14px;z-index:2;display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:#fff;font-size:13px;font-weight:700;padding:9px 14px;border-radius:999px;box-shadow:0 6px 18px rgba(12,36,64,.25)}
+.mapa-tag svg,.maps-link svg{width:18px;height:18px}
+.ubi-info{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radio);padding:26px;display:flex;flex-direction:column;gap:16px}
+.ubi-info h3{font-size:28px}
+.barrios{display:flex;flex-wrap:wrap;gap:8px}
+@media(min-width:761px){.ubi-grid{grid-template-columns:1.2fr 1fr}}
+
+/* CTA final + footer */
+.cta-final{text-align:center;padding:80px 0}
+.cta-final img{width:220px;margin:0 auto 10px}
+.cta-final h2{margin-bottom:20px}
+footer{border-top:1px solid var(--linea);padding:28px 0;font-size:14px;color:var(--gris)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+footer a{text-decoration:none;font-weight:600;color:var(--navy)}
+
+/* Barra fija (celular) */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(250,251,248,.96);backdrop-filter:blur(10px);border-top:1px solid var(--linea)}
+.barra .btn{justify-content:center;padding:13px 10px;font-size:15px}
+.barra .btn-sec{background:var(--blanco)}
+body{padding-bottom:76px}
+.promo-btn{bottom:86px!important}
+@media(min-width:861px){.barra{display:none}body{padding-bottom:0}.promo-btn{bottom:22px!important}}
+
+/* WhatsApp flotante (compu) */
+.wa-flot{display:none!important;position:fixed;right:18px;bottom:18px;z-index:50;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(12,36,64,.25);transition:transform .15s}
+.wa-flot:hover{transform:scale(1.07)}
+@media(min-width:861px){.wa-flot{display:grid!important}}
+.wa-flot svg{width:32px;height:32px;fill:#fff}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#inicio" class="marca"><img src="img/logo.png" alt="Logo"><span>Carlos Giménez</span></a>
+    <div class="nav-links">
+      <a href="#somos">Quiénes somos</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#box">El box</a>
+      <a href="#agendar">Agendar</a>
+      <a href="#modalidades">Modalidades</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#planes">Planes</a>
+      <a href="#ubicacion">Ubicación</a>
+    </div>
+    <a class="btn btn-chico nav-cta" data-wa="portada" href="#">Escribinos</a>
+    <button class="menu-btn" id="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <div class="menu-movil" id="menu-movil">
+    <a href="#somos">Quiénes somos</a>
+    <a href="#equipo">Equipo</a>
+    <a href="#box">El box</a>
+    <a href="#agendar">Agendar clase</a>
+    <a href="#modalidades">Modalidades</a>
+    <a href="#planes">Planes</a>
+    <a href="#ubicacion">Ubicación</a>
+  </div>
+</nav>
+
+<!-- 1. PORTADA -->
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Buenos Aires · Box, domicilio y online</div>
+      <h1>Entrenamiento <em>personalizado.</em><br>De atletas a principiantes.</h1>
+      <p class="lead">Entrenamos con vos, a tu ritmo y donde te quede cómodo: en el box, en tu casa o online.</p>
+      <div class="hero-ctas">
+        <a class="btn" data-wa="portada" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Quiero empezar</a>
+        <a class="btn btn-sec" href="#planes">Ver planes</a>
+      </div>
+    </div>
+    <div class="hero-img"><img fetchpriority="high" src="img/tigre-jump.png" alt="Mascota entrenando"></div>
+  </div>
+</header>
+
+<!-- 6. VIDEO REAL DE ENTRENAMIENTOS
+     Opción A: archivo propio → <video src="entrenamientos.mp4" autoplay muted loop playsinline></video>
+     Opción B: YouTube → <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" allowfullscreen></iframe> -->
+<section class="video-sec" id="video">
+  <div class="wrap">
+    <div class="kicker">Así entrenamos · Lo cuentan nuestros alumnos</div>
+    <h2>Entrenamientos reales</h2>
+    <p class="lead">Sin filtros: así se entrena en el box y esto cuentan los que ya entrenan con nosotros.</p>
+    <div class="videos" id="videos">
+      <div class="video-card"><video data-mp4="videos/entreno1.mp4" data-webm="videos/entreno1.webm" poster="videos/entreno1.jpg" muted loop playsinline autoplay preload="auto" aria-label="Video de entrenamiento 1"></video></div>
+      <div class="video-card"><video data-mp4="videos/entreno2.mp4" data-webm="videos/entreno2.webm" poster="videos/entreno2.jpg" muted loop playsinline autoplay preload="auto" aria-label="Video de entrenamiento 2"></video></div>
+      <div class="video-card"><video data-mp4="videos/entreno3.mp4" data-webm="videos/entreno3.webm" poster="videos/entreno3.jpg" muted loop playsinline autoplay preload="auto" aria-label="Video de entrenamiento 3"></video></div>
+    </div>
+    <a class="btn" href="https://www.instagram.com/entrena.concarlitos" target="_blank" rel="noopener" style="margin-top:24px">Ver más en Instagram</a>
+  </div>
+</section>
+
+
+<!-- 2. QUIÉNES SOMOS -->
+<section class="somos" id="somos">
+  <div class="wrap">
+    <div class="kicker">Quiénes somos</div>
+    <h2>Somos profes. Nos adaptamos a vos.</h2>
+    <p class="lead">Somos profesores de Educación Física y formamos parte del staff de preparación física de la selección argentina de béisbol. Entrenamos atletas de alto rendimiento y también a personas que nunca entrenaron.</p>
+    <div class="somos-grid">
+      <div class="somos-card"><div class="num">01</div><h3>Profesores de Educación Física</h3><p>Cada plan lo arma un profe recibido, no una app genérica.</p></div>
+      <div class="somos-card"><div class="num">02</div><h3>Experiencia en alto rendimiento</h3><p>Preparamos atletas de selección. Ese mismo método, adaptado a tu nivel.</p></div>
+      <div class="somos-card"><div class="num">03</div><h3>Para cualquier situación</h3><p>Sin experiencia, volviendo de una lesión o compitiendo: ajustamos el plan a vos.</p></div>
+    </div>
+    <a class="btn" data-wa="portada" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Hablemos</a>
+  </div>
+</section>
+
+<!-- EL EQUIPO -->
+<section id="equipo">
+  <div class="wrap">
+    <div class="kicker">El equipo</div>
+    <h2>Tus profes</h2>
+
+    <div class="profe">
+      <div class="profe-foto"><img src="img/carlos.jpg" alt="Carlos Giménez lanzando con la Selección Argentina de Béisbol" loading="lazy"></div>
+      <div>
+        <h3>Carlos Giménez</h3>
+        <div class="rol">Profesor de Educación Física · Preparador físico</div>
+        <p>Soy Carlos Giménez, exjugador de la Selección Argentina de Béisbol y atleta de alto rendimiento. Actual entrenador físico de la selección de béisbol. Mi formación académica como Profesor de Educación Física en el Instituto Romero Brest me permitió integrar ciencia, técnica y práctica en cada entrenamiento. A lo largo de mi trayectoria, he combinado la disciplina del deporte profesional con la enseñanza, logrando que más de 100 alumnos alcancen sus metas. Mi misión es transmitir la pasión por el movimiento y la excelencia deportiva a cada persona que entrena conmigo.</p>
+        <div class="chips">
+          <span class="chip">Prof. de Educación Física · Romero Brest</span>
+          <span class="chip">Ex Selección Argentina de Béisbol</span>
+          <span class="chip">Preparador físico de la Selección</span>
+          <span class="chip">+100 alumnos</span>
+        </div>
+        <div class="profe-links">
+          <a class="ig" href="https://instagram.com/carlosgimenz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg> @carlosgimenz</a>
+          <a class="ig" href="https://instagram.com/entrena.concarlitos" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg> @entrena.concarlitos</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOL: cuando tengas su foto, reemplazar el bloque .profe-iniciales por <img> -->
+    <div class="profe">
+      <div class="profe-foto"><img loading="lazy" src="img/sol.jpg" alt="Sol Schiro en la sala de Pilates"></div>
+      <div>
+        <h3>Sol Schiro</h3>
+        <div class="rol">Profesora Nacional de Educación Física · Lic. en Gestión Deportiva</div>
+        <p>Profesora Nacional de Educación Física y Licenciada en Gestión Deportiva. Especialista en Pilates, stretching y telas aéreas.</p>
+        <div class="chips"><span class="chip">Pilates</span><span class="chip">Stretching</span><span class="chip">Telas aéreas</span></div>
+        <div class="profe-links"><a class="ig" href="https://www.instagram.com/profesolci" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg> @profesolci</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EL BOX -->
+<section id="box" style="padding-top:56px">
+  <div class="wrap">
+    <div class="kicker">Nuestro lugar</div>
+    <h2>Un box propio en Coghlan</h2>
+    <p class="lead">Washington 2589, Coghlan. Un espacio pensado para el entrenamiento personalizado, con vestuarios y todo el equipamiento que necesitás.</p>
+    <div class="box-grid">
+      <figure><img src="img/box1.jpg" alt="Entrada al box con alumnos entrenando" loading="lazy"><figcaption><a class="maps-link" href="#" target="_blank" rel="noopener" style="text-decoration:none">📍 Washington 2589</a></figcaption></figure>
+      <figure><img src="img/box3.jpg" alt="Entrenamiento personalizado con balón medicinal" loading="lazy"><figcaption>1 a 1</figcaption></figure>
+      <figure><img src="img/box5.jpg" alt="Sala con discos, racks y bolsa de boxeo" loading="lazy"><figcaption>Equipamiento</figcaption></figure>
+      <figure><img src="img/box4.jpg" alt="Sala de entrenamiento con kettlebells y TRX" loading="lazy"><figcaption>Sala</figcaption></figure>
+      <figure><img src="img/box2.jpg" alt="Fachada del box" loading="lazy"><figcaption>Entrada</figcaption></figure>
+    </div>
+    <div class="box-info">
+      <div class="box-item"><h3>Equipamiento completo</h3><p>Racks, barras y discos, kettlebells, TRX, anillas, sogas, cajones, slam balls, bandas y bolsa de boxeo.</p></div>
+      <div class="box-item"><h3>Vestuarios</h3><p>Venís del trabajo, te cambiás, entrenás y seguís con tu día.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENDÁ TU CLASE -->
+<section id="agendar" style="padding-top:0">
+  <div class="wrap">
+    <form class="agenda" id="form-agenda">
+      <div class="agenda-txt">
+        <div class="kicker">Agendá tu clase</div>
+        <h2>Elegí días y horario</h2>
+        <p>Marcá los días y la franja que te quedan bien. Te llega el mensaje armado a nuestro WhatsApp y te confirmamos el horario.</p>
+      </div>
+      <div class="agenda-campos">
+        <label>Nombre<input name="nombre" required placeholder="Tu nombre"></label>
+        <label>Modalidad
+          <select name="modalidad">
+            <option>En el box</option><option>A domicilio</option><option>Online</option><option>Híbrido</option><option>Clase por sesión</option>
+          </select>
+        </label>
+        <fieldset class="full opciones" id="op-dias"><legend>Días que te quedan bien</legend>
+          <label><input type="checkbox" value="lunes"><span>Lun</span></label>
+          <label><input type="checkbox" value="martes"><span>Mar</span></label>
+          <label><input type="checkbox" value="miércoles"><span>Mié</span></label>
+          <label><input type="checkbox" value="jueves"><span>Jue</span></label>
+          <label><input type="checkbox" value="viernes"><span>Vie</span></label>
+          <label><input type="checkbox" value="sábado"><span>Sáb</span></label>
+        </fieldset>
+        <fieldset class="full opciones" id="op-horas"><legend>Horario aproximado</legend>
+          <label><input type="checkbox" value="mañana (7 a 12 h)"><span>Mañana · 7 a 12 h</span></label>
+          <label><input type="checkbox" value="mediodía (12 a 15 h)"><span>Mediodía · 12 a 15 h</span></label>
+          <label><input type="checkbox" value="tarde (15 a 19 h)"><span>Tarde · 15 a 19 h</span></label>
+          <label><input type="checkbox" value="noche (19 a 22 h)"><span>Noche · 19 a 22 h</span></label>
+        </fieldset>
+        <p class="full aviso" id="ag-aviso" hidden>Elegí al menos un día y un horario.</p>
+        <label class="full">Comentario (opcional)<input name="nota" placeholder="Objetivo, lesión, experiencia previa..."></label>
+        <button class="btn full" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Agendar por WhatsApp</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- PARA QUIÉN ES -->
+<section id="para-quien">
+  <div class="wrap">
+    <div class="kicker">Para quién es</div>
+    <h2>Del atleta al que nunca entrenó</h2>
+    <p class="lead">El método es el mismo; lo que cambia es la carga, el ritmo y el objetivo.</p>
+    <div class="para-grid">
+      <div class="para"><span class="tag v">Arrancás de cero</span><h3>Nunca entrenaste</h3><p>Empezamos por lo básico: técnica, movilidad y hábitos. Sin exigencias que no podés sostener.</p></div>
+      <div class="para"><span class="tag">Querés volver</span><h3>Dejaste y querés retomar</h3><p>Armamos un plan que se adapta a tu tiempo y a cómo está tu cuerpo hoy.</p></div>
+      <div class="para"><span class="tag">Competís</span><h3>Sos atleta</h3><p>Fuerza, potencia y prevención de lesiones, con la misma planificación que usamos en alto rendimiento.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. MODALIDADES -->
+<section id="modalidades">
+  <div class="wrap">
+    <div class="kicker">Modalidades</div>
+    <h2>Elegí cómo y dónde entrenar</h2>
+    <p class="lead">Mismo seguimiento y mismo profe, en el formato que te sirva.</p>
+    <div class="mod-grid">
+      <div class="mod">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M6 7v10M18 7v10M3 9v6M21 9v6M6 12h12"/></svg></div>
+        <h3>En el box</h3><p>Entrenamiento 1 a 1 en nuestro box de Coghlan, con vestuarios y todo el equipamiento.</p>
+        <a class="btn btn-chico" data-wa="box" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Consultar</a>
+      </div>
+      <div class="mod">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+        <h3>A domicilio</h3><p>Vamos a tu casa o edificio. Vos ponés el lugar, nosotros el plan.</p>
+        <a class="btn btn-chico" data-wa="domicilio" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Consultar</a>
+      </div>
+      <div class="mod">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+        <h3>Online</h3><p>Tu rutina en el celular, con seguimiento y ajustes de tu profe.</p>
+        <a class="btn btn-chico" data-wa="online" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Consultar</a>
+      </div>
+      <div class="mod">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 12h6M14 12h6"/><circle cx="12" cy="12" r="2"/><path d="M4 6h16M4 18h16"/></svg></div>
+        <h3>Híbrido</h3><p>Ideal si vivís lejos: 1 o 2 veces por semana al box y el resto con seguimiento online.</p>
+        <a class="btn btn-chico" data-wa="hibrido" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Consultar</a>
+      </div>
+      <div class="mod">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+        <h3>Por sesión</h3><p>Sin plan mensual. Reservás la clase que necesitás.</p>
+        <a class="btn btn-chico" data-wa="sesion" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Reservar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO ES UNA SESIÓN -->
+<section id="sesion" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">Cómo trabajamos</div>
+    <h2>Así arrancás</h2>
+    <div class="pasos">
+      <div class="paso"><h3>Charla inicial</h3><p>Nos contás tu objetivo, tu historial y cuánto tiempo tenés.</p></div>
+      <div class="paso"><h3>Evaluación</h3><p>Vemos cómo te movés y desde dónde partimos.</p></div>
+      <div class="paso"><h3>Tu plan</h3><p>Armamos el programa según tu nivel y la modalidad que elegiste.</p></div>
+      <div class="paso"><h3>Seguimiento</h3><p>Registramos cargas y progresos, y ajustamos semana a semana.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. TESTIMONIOS
+     Reemplazá cada [ ] con el testimonio real.
+     Para usar video: poné el archivo (ej. testimonio-atleta.mp4) en la misma carpeta
+     y descomentá la línea <video>. -->
+<section class="testi" id="testimonios">
+  <div class="wrap">
+    <div class="kicker">Testimonios</div>
+    <h2>Lo cuentan nuestros alumnos</h2>
+    <p class="lead">Del atleta de selección a quien arrancó de cero. Mirá lo que cuentan en los videos de arriba y, si ya entrenás con nosotros, contanos tu experiencia.</p>
+    <div class="testi-cta">
+      <a class="btn" href="#video">▶ Ver los videos</a>
+      <a class="btn btn-sec" data-wa="testimonio" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Quiero dejar mi testimonio</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. RESEÑAS DE GOOGLE -->
+<section id="resenas">
+  <div class="wrap">
+    <div class="kicker">Reseñas</div>
+    <h2>Opiniones en Google</h2>
+    <div class="resenas-box">
+      <div class="estrellas" aria-hidden="true">★★★★★</div>
+      <p><b>¿Entrenás con nosotros?</b><br>Dejanos tu opinión en Google: te lleva un minuto y nos ayuda a que más gente nos encuentre.</p>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a class="btn btn-chico" id="g-dejar" href="#" target="_blank" rel="noopener">Dejar mi reseña</a>
+        <a class="btn btn-sec btn-chico maps-link" id="g-ver" href="#" target="_blank" rel="noopener">Ver en Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 7. PLANES — completá frecuencia y precio -->
+<section id="planes">
+  <div class="wrap">
+    <div class="kicker">Planes</div>
+    <h2>Planes</h2>
+    <p class="lead">Todos los planes incluyen programación personalizada y seguimiento de tu profe. Escribinos y te pasamos valores y frecuencias.</p>
+    <div class="planes-grid">
+      <div class="plan dest"><span class="badge">Recomendado</span><span class="donde">En el box</span><h3>Personalizado</h3>
+        <ul><li>Profe solo para vos</li><li>Box con vestuarios y equipamiento</li><li>Seguimiento de cargas</li></ul>
+        <a class="btn btn-chico" data-wa="box" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Consultar</a></div>
+      <div class="plan"><span class="donde">En tu casa</span><h3>A domicilio</h3>
+        <ul><li>Vamos a cualquier barrio de CABA</li><li>Plan armado para tu espacio</li><li>Seguimiento de cargas</li></ul>
+        <a class="btn btn-chico" data-wa="domicilio" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Consultar</a></div>
+      <div class="plan"><span class="donde">Desde la app</span><h3>Online</h3>
+        <ul><li>App con tus entrenamientos</li><li>Tus progresos registrados</li><li>Seguimiento de tu entrenador</li></ul>
+        <a class="btn btn-chico" data-wa="online" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Consultar</a></div>
+      <div class="plan"><span class="donde">Box + online</span><h3>Híbrido</h3>
+        <ul><li>1 o 2 veces por semana en el box</li><li>Correcciones de técnica en persona</li><li>Seguimiento online toda la semana</li></ul>
+        <a class="btn btn-chico" data-wa="hibrido" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Consultar</a></div>
+    </div>
+    <div class="prueba">
+      <div><b>Clase por sesión</b><br><span style="color:var(--gris)">Sin plan mensual. Reservás cuando quieras.</span></div>
+      <a class="btn btn-chico" data-wa="sesion" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Reservar una clase</a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. UBICACIÓN -->
+<section id="ubicacion" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">Ubicación</div>
+    <h2>Dónde entrenamos</h2>
+    <div class="ubi-grid">
+      <a class="mapa maps-link" href="#" target="_blank" rel="noopener" aria-label="Abrir en Google Maps"><span class="mapa-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Abrir en Google Maps</span><iframe id="mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa del box"></iframe></a>
+      <div class="ubi-info">
+        <h3>El box</h3>
+        <p id="direccion">Washington 2589, Coghlan, CABA</p>
+        <a class="btn btn-sec maps-link" href="#" target="_blank" rel="noopener" style="align-self:flex-start"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Cómo llegar en Google Maps</a>
+        <h3>A domicilio</h3>
+        <p>Vamos a todos los barrios de CABA.</p>
+                <a class="btn" data-wa="domicilio" href="#" style="align-self:flex-start"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Consultar a domicilio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREGUNTAS FRECUENTES -->
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">Preguntas frecuentes</div>
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq">
+      <details><summary>Nunca entrené, ¿puedo arrancar?</summary><p>Sí. Empezamos con una evaluación y armamos el plan desde tu nivel real, sin apurar nada.</p></details>
+      <details><summary>Tengo una lesión o un dolor, ¿puedo entrenar?</summary><p>Contanos por WhatsApp qué te pasa. Adaptamos los ejercicios y, si hace falta, trabajamos junto a tu médico o kinesiólogo.</p></details>
+      <details><summary>¿A qué zonas van a domicilio?</summary><p>A todos los barrios de CABA.</p></details>
+      <details><summary>¿Cómo funciona el plan online?</summary><p>Tenemos una app donde puedes ver tus entrenamientos y progresos. Con eso el entrenador puede ver tus sesiones y hacerte el seguimiento.</p></details>
+      <details><summary>¿Cuántas veces por semana conviene entrenar?</summary><p>Depende de tu objetivo y tu tiempo. Para la mayoría, 2 o 3 veces por semana alcanza para ver resultados.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="wrap">
+    <img src="img/tigre-bandera.png" alt="Mascota con bandera" loading="lazy">
+    <h2>¿Arrancamos?</h2>
+    <a class="btn" data-wa="portada" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Escribinos por WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="anio"></span> Carlos Giménez · Entrenamiento personalizado</div>
+    <div style="display:flex;gap:18px">
+      <a id="ig" href="#" target="_blank" rel="noopener">Instagram</a>
+      <a data-wa="portada" href="#">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<!-- PROMO PLAN HÍBRIDO (aparece una vez por visita) -->
+<div class="promo" id="promo" hidden role="dialog" aria-modal="true" aria-labelledby="promo-tit">
+  <div class="promo-card">
+    <button class="promo-x" aria-label="Cerrar" data-cerrar>×</button>
+    <div class="promo-tigre"><img src="img/tigre-bandera.png" alt=""></div>
+    <div class="promo-txt">
+      <div class="kicker">Aprovechá el plan híbrido</div>
+      <h2 id="promo-tit">¿Vivís lejos <em>del box?</em></h2>
+      <p>Venís 1 o 2 veces por semana para que tu entrenador te corrija en persona, y el resto de la semana te seguimos online.</p>
+      <ul>
+        <li>Correcciones de técnica en el box</li>
+        <li>Seguimiento online toda la semana</li>
+        <li>Ideal si no tenés tiempo y querés un seguimiento real con tu entrenador personal</li>
+      </ul>
+      <a class="btn" data-wa="hibrido" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Quiero el plan híbrido</a>
+      <button class="promo-no" data-cerrar>Ahora no</button>
+    </div>
+  </div>
+</div>
+
+<button class="promo-btn" id="promo-abrir" hidden><span>Promo</span> Plan híbrido</button>
+
+<!-- BARRA FIJA (celular) -->
+<div class="barra">
+  <a class="btn btn-sec" href="#agendar">Agendar clase</a>
+  <a class="btn" data-wa="portada" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> WhatsApp</a>
+</div>
+
+<!-- 9. WHATSAPP FLOTANTE -->
+<a class="wa-flot" data-wa="portada" href="#" aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a>
+
+<script>
+/* =========================================================
+   CONFIGURACIÓN — cambiá solo esto
+   ========================================================= */
+const CONFIG = {
+  whatsapp: '5491173721016',
+  instagram: 'https://instagram.com/entrena.concarlitos',
+  googleVer: '',               // ← link de tu ficha de Google Maps
+  googleDejar: '',             // ← link directo para dejar reseña
+  mapa: 'Washington 2589, Coghlan, Ciudad de Buenos Aires',
+  barrios: ['Toda CABA'],
+  mapsLink: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Washington 2589, Coghlan, Ciudad de Buenos Aires'),
+  mensajes: {
+    portada:   'Hola! Quiero info para empezar a entrenar',
+    box:       'Hola! Quiero info del entrenamiento personalizado en el box',
+    domicilio: 'Hola! Quiero info del entrenamiento a domicilio',
+    online:    'Hola! Quiero info del plan online',
+    hibrido:   'Hola! Quiero info del plan híbrido',
+    sesion:    'Hola! Quiero reservar una clase',
+    testimonio:'Hola! Entreno con ustedes y quiero dejar mi testimonio'
+  }
+};
+/* ========================================================= */
+
+document.querySelectorAll('[data-wa]').forEach(a => {
+  const clave = a.dataset.wa;
+  a.href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(CONFIG.mensajes[clave] || CONFIG.mensajes.portada);
+  a.target = '_blank'; a.rel = 'noopener';
+  a.addEventListener('click', () => {
+    // Medición (Fase 5): cuenta cada clic a WhatsApp con el botón de origen
+    if (window.gtag) gtag('event', 'clic_whatsapp', { boton: clave });
+    if (window.fbq) fbq('track', 'Contact', { boton: clave });
+  });
+});
+document.getElementById('ig').href = CONFIG.instagram;
+if (CONFIG.googleVer) document.getElementById('g-ver').href = CONFIG.googleVer;
+document.getElementById('g-dejar').href = CONFIG.googleDejar || CONFIG.mapsLink;
+document.getElementById('mapa').src = 'https://maps.google.com/maps?q=' + encodeURIComponent(CONFIG.mapa) + '&z=15&output=embed';
+document.querySelectorAll('.maps-link').forEach(a => a.href = CONFIG.googleVer || CONFIG.mapsLink);
+document.getElementById('anio').textContent = new Date().getFullYear();
+
+// Agendar clase → WhatsApp
+const fAg = document.getElementById('form-agenda');
+const marcados = id => [...document.querySelectorAll('#' + id + ' input:checked')].map(i => i.value);
+document.querySelectorAll('.opciones input').forEach(i => i.addEventListener('change', () => document.getElementById('ag-aviso').hidden = true));
+const listar = a => a.length > 1 ? a.slice(0,-1).join(', ') + ' o ' + a[a.length-1] : a[0];
+fAg.addEventListener('submit', e => {
+  e.preventDefault();
+  const dias = marcados('op-dias'), horas = marcados('op-horas');
+  const aviso = document.getElementById('ag-aviso');
+  if (!dias.length || !horas.length) { aviso.hidden = false; return; }
+  aviso.hidden = true;
+  let msg = 'Hola! Soy ' + fAg.nombre.value.trim() + '. Quiero agendar una clase.\n' +
+            'Modalidad: ' + fAg.modalidad.value + '\n' +
+            'Días: ' + listar(dias) + '\n' +
+            'Horario: ' + listar(horas);
+  if (fAg.nota.value.trim()) msg += '\nComentario: ' + fAg.nota.value.trim();
+  if (window.gtag) gtag('event', 'clic_whatsapp', { boton: 'agenda' });
+  if (window.fbq) fbq('track', 'Schedule');
+  const link = document.createElement('a');
+  link.href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(msg);
+  link.target = '_blank'; link.rel = 'noopener';
+  document.body.appendChild(link); link.click(); link.remove();
+});
+// Promo híbrido: aparece sola después de 20 s con la página a la vista
+// (si la pestaña está en segundo plano, el reloj se pausa)
+(() => {
+  const promo = document.getElementById('promo');
+  const boton = document.getElementById('promo-abrir');
+  const ESPERA = 20000;
+  let visto = 0, desde = null, listo = false;
+  const mostrar = () => {
+    if (listo) return; listo = true;
+    promo.hidden = false; boton.hidden = false;
+    promo.classList.add('on'); boton.classList.add('on');
+  };
+  const tic = () => {
+    if (listo) return;
+    if (document.visibilityState === 'visible') {
+      const ahora = performance.now();
+      if (desde !== null) visto += ahora - desde;
+      desde = ahora;
+      if (visto >= ESPERA) return mostrar();
+    } else desde = null;
+    setTimeout(tic, 250);
+  };
+  const arrancar = () => setTimeout(tic, 250);
+  if (document.readyState === 'complete') arrancar(); else window.addEventListener('load', arrancar);
+  promo.addEventListener('click', e => { if (e.target === promo || e.target.closest('[data-cerrar]')) promo.classList.remove('on'); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') promo.classList.remove('on'); });
+  promo.querySelector('[data-wa]').addEventListener('click', () => promo.classList.remove('on'));
+})();
+document.getElementById('promo-abrir').addEventListener('click', e => { e.stopPropagation(); const p = document.getElementById('promo'); p.hidden = false; p.classList.add('on'); });
+
+// Menú del celular
+(() => {
+  const nav = document.querySelector('nav'), btn = document.getElementById('menu-btn');
+  btn.addEventListener('click', () => { const ab = nav.classList.toggle('abierto'); btn.setAttribute('aria-expanded', ab); });
+  document.querySelectorAll('#menu-movil a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('abierto'); btn.setAttribute('aria-expanded', false); }));
+})();
+
+// Videos: cargan al llegar a la sección y arrancan los 3 juntos, solos y en silencio
+(() => {
+  const caja = document.getElementById('videos');
+  const vs = [...caja.querySelectorAll('video')];
+  let cargados = false, enPantalla = false;
+  const aUrl = src => {
+    if (!src.startsWith('data:')) return src;
+    // los videos embebidos se pasan a blob: Safari/iPhone no reproduce bien data:
+    const [cab, datos] = src.split(','), bin = atob(datos), arr = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+    return URL.createObjectURL(new Blob([arr], { type: cab.slice(5, cab.indexOf(';')) }));
+  };
+  const cargar = () => {
+    if (cargados) return; cargados = true;
+    vs.forEach(v => {
+      v.muted = true; v.defaultMuted = true; v.playsInline = true; v.loop = true; v.autoplay = true;
+      v.setAttribute('muted', ''); v.setAttribute('playsinline', ''); v.setAttribute('webkit-playsinline', '');
+      const mp4 = v.canPlayType('video/mp4; codecs="avc1.4D401E"');
+      v.src = aUrl(mp4 ? v.dataset.mp4 : v.dataset.webm); v.load();
+    });
+  };
+  // si el navegador o el visor bloquea el video, se muestra la foto en su lugar (nunca un ícono roto)
+  const aFoto = v => {
+    if (v.dataset.foto) return; v.dataset.foto = '1';
+    const img = document.createElement('img');
+    img.src = v.getAttribute('poster'); img.alt = ''; img.style.cssText = 'width:100%;height:100%;object-fit:cover;display:block';
+    v.replaceWith(img);
+  };
+  vs.forEach(v => v.addEventListener('error', () => aFoto(v)));
+  const play = () => {
+    cargar();
+    vs.forEach(v => { const p = v.play(); if (p) p.catch(() => {}); });
+  };
+  const pause = () => vs.forEach(v => v.pause());
+  // si el navegador bloqueó el autoplay, arrancan con el primer toque o scroll
+  const reintentar = () => { if (enPantalla) play(); };
+  ['touchstart', 'touchend', 'pointerup', 'click', 'keydown', 'scroll'].forEach(ev => window.addEventListener(ev, reintentar, { passive: true }));
+  // tocar cualquier video los arranca a los 3
+  caja.addEventListener('click', () => { enPantalla = true; play(); });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(es => { enPantalla = es[0].isIntersecting; enPantalla ? play() : pause(); }, { threshold: 0.15 }).observe(caja);
+  } else { enPantalla = true; play(); }
+  // por si el observador no avisa (algunas vistas previas), revisar a mano
+  setTimeout(() => { const r = caja.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) { enPantalla = true; play(); } }, 800);
+})();
+</script>
+</body>
+</html>
